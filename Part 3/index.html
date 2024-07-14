@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="userForm">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="age">Age:</label><br />
+        <input type="number" id="age" name="age" required /><br /><br />
+        <label for="color">Favorite Color:</label><br />
+        <select id="color" name="color" required>
+          <option value="">Select a color</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option></select
+        ><br /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="result-container" id="resultContainer"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
